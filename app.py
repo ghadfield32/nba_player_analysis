@@ -35,7 +35,7 @@ if st.sidebar.button('Load/Refresh Data'):
 # Loading data with caching
 @st.cache(ttl=3600, max_entries=10, show_spinner=False)
 def load_data():
-    data = pd.read_csv('data/player_game_logs_winr.csv')
+    data = pd.read_csv(prev_data_file_path)
     data['GAME_DATE'] = pd.to_datetime(data['GAME_DATE'])
     data.sort_values(by='GAME_DATE', inplace=True)
     return data
