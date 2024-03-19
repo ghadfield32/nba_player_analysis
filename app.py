@@ -11,8 +11,6 @@ import os
 prev_data_file_path = os.path.join('data', 'player_game_logs_winr.csv')
 upcoming_games_file_path = os.path.join('data', '23_24_season_games.csv')
 
-
-
 # Add a new section in your sidebar for navigation
 st.sidebar.header("Navigation")
 page = st.sidebar.radio("Select a page:", ["Player Analysis", "Forecasting Player Statistics"])
@@ -105,7 +103,6 @@ if page == "Player Analysis":
 
 
     if not player_data.empty:
-        player_data['HOME_AWAY'] = player_data['home_away']
         game_location = 'Home' if player_data['HOME_AWAY'].iloc[0] == 'Home' else 'Away'
         game_opposing_team = player_data['OPPONENT_NAME'].iloc[0]
         st.write(f"Data for {selected_player} ({game_location} game) against {game_opposing_team} on {selected_date}:")
