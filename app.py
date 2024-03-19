@@ -105,6 +105,7 @@ if page == "Player Analysis":
 
 
     if not player_data.empty:
+        player_data['HOME_AWAY'] = player_data['home_away']
         game_location = 'Home' if player_data['HOME_AWAY'].iloc[0] == 'Home' else 'Away'
         game_opposing_team = player_data['OPPONENT_NAME'].iloc[0]
         st.write(f"Data for {selected_player} ({game_location} game) against {game_opposing_team} on {selected_date}:")
