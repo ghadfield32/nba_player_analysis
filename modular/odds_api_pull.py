@@ -6,6 +6,8 @@ import json
 # This is an example of how to use the odds API to fetch odds data for a specific market for a specific game to get columns as needed
 # Define your API key and base URL
 # api_key = ''
+# Access your secret
+# api_key = st.secrets["api_key"]
 # base_url = 'https://api.the-odds-api.com/v4/sports/basketball_nba/events'
 
 # # Set up parameters for the API call
