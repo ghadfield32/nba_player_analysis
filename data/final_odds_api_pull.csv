@@ -1,0 +1,262 @@
+PLAYER_NAME,GAME_DATE,MARKET,OVER_PRICE,POINT,HOME_TEAM,AWAY_TEAM,UNDER_PRICE,TEAM_NAME,HOME_AWAY,OPPONENT_NAME
+Brandon Ingram,2024-03-19,player_assists,1.83,5.5,Brooklyn Nets,New Orleans Pelicans,1.91,New Orleans Pelicans,Away,Brooklyn Nets
+Brandon Ingram,2024-03-19,player_blocks,1.87,0.5,Brooklyn Nets,New Orleans Pelicans,1.87,New Orleans Pelicans,Away,Brooklyn Nets
+Brandon Ingram,2024-03-19,player_blocks_steals,1.95,1.5,Brooklyn Nets,New Orleans Pelicans,1.8,New Orleans Pelicans,Away,Brooklyn Nets
+Brandon Ingram,2024-03-19,player_points,1.83,19.5,Brooklyn Nets,New Orleans Pelicans,1.87,New Orleans Pelicans,Away,Brooklyn Nets
+Brandon Ingram,2024-03-19,player_points_alternate,1.53,17.5,Brooklyn Nets,New Orleans Pelicans,,New Orleans Pelicans,Away,Brooklyn Nets
+Brandon Ingram,2024-03-19,player_points_alternate,,18.5,Brooklyn Nets,New Orleans Pelicans,2.15,New Orleans Pelicans,Away,Brooklyn Nets
+Brandon Ingram,2024-03-19,player_points_assists,1.91,25.5,Brooklyn Nets,New Orleans Pelicans,1.83,New Orleans Pelicans,Away,Brooklyn Nets
+Brandon Ingram,2024-03-19,player_points_rebounds,1.95,25.5,Brooklyn Nets,New Orleans Pelicans,1.8,New Orleans Pelicans,Away,Brooklyn Nets
+Brandon Ingram,2024-03-19,player_points_rebounds_assists,1.83,30.5,Brooklyn Nets,New Orleans Pelicans,1.91,New Orleans Pelicans,Away,Brooklyn Nets
+Brandon Ingram,2024-03-19,player_rebounds,1.95,5.5,Brooklyn Nets,New Orleans Pelicans,1.77,New Orleans Pelicans,Away,Brooklyn Nets
+Brandon Ingram,2024-03-19,player_rebounds_alternate,,3.5,Brooklyn Nets,New Orleans Pelicans,4.2,New Orleans Pelicans,Away,Brooklyn Nets
+Brandon Ingram,2024-03-19,player_rebounds_alternate,9.75,9.5,Brooklyn Nets,New Orleans Pelicans,,New Orleans Pelicans,Away,Brooklyn Nets
+Brandon Ingram,2024-03-19,player_rebounds_assists,2.05,11.5,Brooklyn Nets,New Orleans Pelicans,1.69,New Orleans Pelicans,Away,Brooklyn Nets
+Brandon Ingram,2024-03-19,player_steals,1.62,0.5,Brooklyn Nets,New Orleans Pelicans,2.2,New Orleans Pelicans,Away,Brooklyn Nets
+Brandon Ingram,2024-03-19,player_threes,1.48,0.5,Brooklyn Nets,New Orleans Pelicans,2.6,New Orleans Pelicans,Away,Brooklyn Nets
+Brandon Ingram,2024-03-19,player_turnovers,2.05,2.5,Brooklyn Nets,New Orleans Pelicans,1.71,New Orleans Pelicans,Away,Brooklyn Nets
+Brandon Miller,2024-03-19,player_assists,1.78,2.5,Orlando Magic,Charlotte Hornets,1.96,Charlotte Hornets,Away,Orlando Magic
+Brandon Miller,2024-03-19,player_assists_alternate,1.15,1.5,Orlando Magic,Charlotte Hornets,,Charlotte Hornets,Away,Orlando Magic
+Brandon Miller,2024-03-19,player_blocks,2.1,0.5,Orlando Magic,Charlotte Hornets,1.66,Charlotte Hornets,Away,Orlando Magic
+Brandon Miller,2024-03-19,player_blocks_alternate,1.91,0.5,Orlando Magic,Charlotte Hornets,,Charlotte Hornets,Away,Orlando Magic
+Brandon Miller,2024-03-19,player_blocks_steals,1.62,1.5,Orlando Magic,Charlotte Hornets,2.16,Charlotte Hornets,Away,Orlando Magic
+Brandon Miller,2024-03-19,player_points,2.04,17.5,Orlando Magic,Charlotte Hornets,1.73,Charlotte Hornets,Away,Orlando Magic
+Brandon Miller,2024-03-19,player_points_alternate,1.43,14.5,Orlando Magic,Charlotte Hornets,,Charlotte Hornets,Away,Orlando Magic
+Brandon Miller,2024-03-19,player_points_assists,1.79,19.5,Orlando Magic,Charlotte Hornets,1.93,Charlotte Hornets,Away,Orlando Magic
+Brandon Miller,2024-03-19,player_points_assists_alternate,1.12,14.5,Orlando Magic,Charlotte Hornets,,Charlotte Hornets,Away,Orlando Magic
+Brandon Miller,2024-03-19,player_points_rebounds,1.92,21.5,Orlando Magic,Charlotte Hornets,1.8,Charlotte Hornets,Away,Orlando Magic
+Brandon Miller,2024-03-19,player_points_rebounds_alternate,1.07,14.5,Orlando Magic,Charlotte Hornets,,Charlotte Hornets,Away,Orlando Magic
+Brandon Miller,2024-03-19,player_points_rebounds_assists,1.81,23.5,Orlando Magic,Charlotte Hornets,1.93,Charlotte Hornets,Away,Orlando Magic
+Brandon Miller,2024-03-19,player_points_rebounds_assists_alternate,1.04,15.5,Orlando Magic,Charlotte Hornets,,Charlotte Hornets,Away,Orlando Magic
+Brandon Miller,2024-03-19,player_rebounds,2.33,4.5,Orlando Magic,Charlotte Hornets,1.56,Charlotte Hornets,Away,Orlando Magic
+Brandon Miller,2024-03-19,player_rebounds_alternate,15.0,9.5,Orlando Magic,Charlotte Hornets,,Charlotte Hornets,Away,Orlando Magic
+Brandon Miller,2024-03-19,player_rebounds_assists,1.7,6.5,Orlando Magic,Charlotte Hornets,2.04,Charlotte Hornets,Away,Orlando Magic
+Brandon Miller,2024-03-19,player_rebounds_assists_alternate,3.55,9.5,Orlando Magic,Charlotte Hornets,,Charlotte Hornets,Away,Orlando Magic
+Brandon Miller,2024-03-19,player_steals,2.55,1.5,Orlando Magic,Charlotte Hornets,1.48,Charlotte Hornets,Away,Orlando Magic
+Brandon Miller,2024-03-19,player_steals_alternate,1.3,0.5,Orlando Magic,Charlotte Hornets,,Charlotte Hornets,Away,Orlando Magic
+Brandon Miller,2024-03-19,player_threes,2.23,2.5,Orlando Magic,Charlotte Hornets,1.61,Charlotte Hornets,Away,Orlando Magic
+Brandon Miller,2024-03-19,player_threes_alternate,1.34,1.5,Orlando Magic,Charlotte Hornets,,Charlotte Hornets,Away,Orlando Magic
+Brandon Miller,2024-03-19,player_turnovers,1.54,1.5,Orlando Magic,Charlotte Hornets,2.33,Charlotte Hornets,Away,Orlando Magic
+Cam Thomas,2024-03-19,player_assists,1.95,3.5,Brooklyn Nets,New Orleans Pelicans,1.77,Brooklyn Nets,Home,New Orleans Pelicans
+Cam Thomas,2024-03-19,player_blocks,3.9,0.5,Brooklyn Nets,New Orleans Pelicans,1.22,Brooklyn Nets,Home,New Orleans Pelicans
+Cam Thomas,2024-03-19,player_blocks_steals,2.85,1.5,Brooklyn Nets,New Orleans Pelicans,1.4,Brooklyn Nets,Home,New Orleans Pelicans
+Cam Thomas,2024-03-19,player_points,1.8,20.5,Brooklyn Nets,New Orleans Pelicans,1.95,Brooklyn Nets,Home,New Orleans Pelicans
+Cam Thomas,2024-03-19,player_points_alternate,1.5,18.5,Brooklyn Nets,New Orleans Pelicans,2.5,Brooklyn Nets,Home,New Orleans Pelicans
+Cam Thomas,2024-03-19,player_points_assists,1.87,24.5,Brooklyn Nets,New Orleans Pelicans,1.83,Brooklyn Nets,Home,New Orleans Pelicans
+Cam Thomas,2024-03-19,player_points_rebounds,1.83,24.5,Brooklyn Nets,New Orleans Pelicans,1.91,Brooklyn Nets,Home,New Orleans Pelicans
+Cam Thomas,2024-03-19,player_points_rebounds_assists,1.91,28.5,Brooklyn Nets,New Orleans Pelicans,1.83,Brooklyn Nets,Home,New Orleans Pelicans
+Cam Thomas,2024-03-19,player_rebounds,1.83,3.5,Brooklyn Nets,New Orleans Pelicans,1.91,Brooklyn Nets,Home,New Orleans Pelicans
+Cam Thomas,2024-03-19,player_rebounds_alternate,,1.5,Brooklyn Nets,New Orleans Pelicans,7.0,Brooklyn Nets,Home,New Orleans Pelicans
+Cam Thomas,2024-03-19,player_rebounds_alternate,21.0,9.5,Brooklyn Nets,New Orleans Pelicans,,Brooklyn Nets,Home,New Orleans Pelicans
+Cam Thomas,2024-03-19,player_rebounds_assists,2.1,7.5,Brooklyn Nets,New Orleans Pelicans,1.69,Brooklyn Nets,Home,New Orleans Pelicans
+Cam Thomas,2024-03-19,player_steals,1.57,0.5,Brooklyn Nets,New Orleans Pelicans,2.3,Brooklyn Nets,Home,New Orleans Pelicans
+Cam Thomas,2024-03-19,player_threes,2.3,2.5,Brooklyn Nets,New Orleans Pelicans,1.57,Brooklyn Nets,Home,New Orleans Pelicans
+Cam Thomas,2024-03-19,player_turnovers,2.2,2.5,Brooklyn Nets,New Orleans Pelicans,1.65,Brooklyn Nets,Home,New Orleans Pelicans
+Dennis Schroder,2024-03-19,player_assists,1.95,6.5,Brooklyn Nets,New Orleans Pelicans,1.8,Brooklyn Nets,Home,New Orleans Pelicans
+Dennis Schroder,2024-03-19,player_blocks,3.9,0.5,Brooklyn Nets,New Orleans Pelicans,1.22,Brooklyn Nets,Home,New Orleans Pelicans
+Dennis Schroder,2024-03-19,player_blocks_steals,2.8,1.5,Brooklyn Nets,New Orleans Pelicans,1.4,Brooklyn Nets,Home,New Orleans Pelicans
+Dennis Schroder,2024-03-19,player_points,1.87,13.5,Brooklyn Nets,New Orleans Pelicans,1.87,Brooklyn Nets,Home,New Orleans Pelicans
+Dennis Schroder,2024-03-19,player_points_alternate,1.5,11.5,Brooklyn Nets,New Orleans Pelicans,,Brooklyn Nets,Home,New Orleans Pelicans
+Dennis Schroder,2024-03-19,player_points_alternate,,12.5,Brooklyn Nets,New Orleans Pelicans,2.2,Brooklyn Nets,Home,New Orleans Pelicans
+Dennis Schroder,2024-03-19,player_points_assists,1.91,20.5,Brooklyn Nets,New Orleans Pelicans,1.83,Brooklyn Nets,Home,New Orleans Pelicans
+Dennis Schroder,2024-03-19,player_points_rebounds,1.91,16.5,Brooklyn Nets,New Orleans Pelicans,1.83,Brooklyn Nets,Home,New Orleans Pelicans
+Dennis Schroder,2024-03-19,player_points_rebounds_assists,1.77,22.5,Brooklyn Nets,New Orleans Pelicans,1.95,Brooklyn Nets,Home,New Orleans Pelicans
+Dennis Schroder,2024-03-19,player_rebounds,1.8,2.5,Brooklyn Nets,New Orleans Pelicans,1.91,Brooklyn Nets,Home,New Orleans Pelicans
+Dennis Schroder,2024-03-19,player_rebounds_alternate,,1.5,Brooklyn Nets,New Orleans Pelicans,3.55,Brooklyn Nets,Home,New Orleans Pelicans
+Dennis Schroder,2024-03-19,player_rebounds_alternate,1.83,2.5,Brooklyn Nets,New Orleans Pelicans,,Brooklyn Nets,Home,New Orleans Pelicans
+Dennis Schroder,2024-03-19,player_rebounds_assists,2.05,9.5,Brooklyn Nets,New Orleans Pelicans,1.71,Brooklyn Nets,Home,New Orleans Pelicans
+Dennis Schroder,2024-03-19,player_steals,1.57,0.5,Brooklyn Nets,New Orleans Pelicans,2.3,Brooklyn Nets,Home,New Orleans Pelicans
+Dennis Schroder,2024-03-19,player_threes,1.62,1.5,Brooklyn Nets,New Orleans Pelicans,2.2,Brooklyn Nets,Home,New Orleans Pelicans
+Dennis Schroder,2024-03-19,player_turnovers,1.69,2.5,Brooklyn Nets,New Orleans Pelicans,2.1,Brooklyn Nets,Home,New Orleans Pelicans
+Dillon Brooks,2024-03-19,player_assists,1.95,1.5,Washington Wizards,Houston Rockets,1.8,Houston Rockets,Away,Washington Wizards
+Dillon Brooks,2024-03-19,player_assists_alternate,1.74,1.5,Washington Wizards,Houston Rockets,,Houston Rockets,Away,Washington Wizards
+Dillon Brooks,2024-03-19,player_blocks,3.6,0.5,Washington Wizards,Houston Rockets,1.27,Houston Rockets,Away,Washington Wizards
+Dillon Brooks,2024-03-19,player_blocks_alternate,3.0,0.5,Washington Wizards,Houston Rockets,,Houston Rockets,Away,Washington Wizards
+Dillon Brooks,2024-03-19,player_blocks_steals,1.4,0.5,Washington Wizards,Houston Rockets,2.75,Houston Rockets,Away,Washington Wizards
+Dillon Brooks,2024-03-19,player_points,2.0,13.5,Washington Wizards,Houston Rockets,1.77,Houston Rockets,Away,Washington Wizards
+Dillon Brooks,2024-03-19,player_points_alternate,1.32,10.5,Washington Wizards,Houston Rockets,,Houston Rockets,Away,Washington Wizards
+Dillon Brooks,2024-03-19,player_points_alternate,,12.5,Washington Wizards,Houston Rockets,1.95,Houston Rockets,Away,Washington Wizards
+Dillon Brooks,2024-03-19,player_points_assists,1.83,14.5,Washington Wizards,Houston Rockets,1.91,Houston Rockets,Away,Washington Wizards
+Dillon Brooks,2024-03-19,player_points_assists_alternate,1.1,9.5,Washington Wizards,Houston Rockets,,Houston Rockets,Away,Washington Wizards
+Dillon Brooks,2024-03-19,player_points_rebounds,1.95,17.5,Washington Wizards,Houston Rockets,1.8,Houston Rockets,Away,Washington Wizards
+Dillon Brooks,2024-03-19,player_points_rebounds_alternate,1.03,9.5,Washington Wizards,Houston Rockets,,Houston Rockets,Away,Washington Wizards
+Dillon Brooks,2024-03-19,player_points_rebounds_assists,1.83,18.5,Washington Wizards,Houston Rockets,1.91,Houston Rockets,Away,Washington Wizards
+Dillon Brooks,2024-03-19,player_points_rebounds_assists_alternate,2.83,22.5,Washington Wizards,Houston Rockets,,Houston Rockets,Away,Washington Wizards
+Dillon Brooks,2024-03-19,player_rebounds,1.65,3.5,Washington Wizards,Houston Rockets,2.15,Houston Rockets,Away,Washington Wizards
+Dillon Brooks,2024-03-19,player_rebounds_alternate,,1.5,Washington Wizards,Houston Rockets,7.5,Houston Rockets,Away,Washington Wizards
+Dillon Brooks,2024-03-19,player_rebounds_alternate,36.0,9.5,Washington Wizards,Houston Rockets,,Houston Rockets,Away,Washington Wizards
+Dillon Brooks,2024-03-19,player_rebounds_assists,1.83,5.5,Washington Wizards,Houston Rockets,1.91,Houston Rockets,Away,Washington Wizards
+Dillon Brooks,2024-03-19,player_steals,1.65,0.5,Washington Wizards,Houston Rockets,2.15,Houston Rockets,Away,Washington Wizards
+Dillon Brooks,2024-03-19,player_steals_alternate,1.69,0.5,Washington Wizards,Houston Rockets,,Houston Rockets,Away,Washington Wizards
+Dillon Brooks,2024-03-19,player_threes,1.71,1.5,Washington Wizards,Houston Rockets,2.05,Houston Rockets,Away,Washington Wizards
+Dillon Brooks,2024-03-19,player_threes_alternate,1.74,1.5,Washington Wizards,Houston Rockets,,Houston Rockets,Away,Washington Wizards
+Dillon Brooks,2024-03-19,player_turnovers,2.55,1.5,Washington Wizards,Houston Rockets,1.48,Houston Rockets,Away,Washington Wizards
+Franz Wagner,2024-03-19,player_assists,2.08,3.5,Orlando Magic,Charlotte Hornets,1.7,Orlando Magic,Home,Charlotte Hornets
+Franz Wagner,2024-03-19,player_assists_alternate,1.13,1.5,Orlando Magic,Charlotte Hornets,,Orlando Magic,Home,Charlotte Hornets
+Franz Wagner,2024-03-19,player_blocks,2.29,0.5,Orlando Magic,Charlotte Hornets,1.56,Orlando Magic,Home,Charlotte Hornets
+Franz Wagner,2024-03-19,player_blocks_alternate,2.0,0.5,Orlando Magic,Charlotte Hornets,,Orlando Magic,Home,Charlotte Hornets
+Franz Wagner,2024-03-19,player_blocks_steals,2.02,1.5,Orlando Magic,Charlotte Hornets,1.72,Orlando Magic,Home,Charlotte Hornets
+Franz Wagner,2024-03-19,player_points,1.82,18.5,Orlando Magic,Charlotte Hornets,1.92,Orlando Magic,Home,Charlotte Hornets
+Franz Wagner,2024-03-19,player_points_alternate,1.43,16.5,Orlando Magic,Charlotte Hornets,,Orlando Magic,Home,Charlotte Hornets
+Franz Wagner,2024-03-19,player_points_assists,1.84,22.5,Orlando Magic,Charlotte Hornets,1.87,Orlando Magic,Home,Charlotte Hornets
+Franz Wagner,2024-03-19,player_points_assists_alternate,1.03,14.5,Orlando Magic,Charlotte Hornets,,Orlando Magic,Home,Charlotte Hornets
+Franz Wagner,2024-03-19,player_points_rebounds,1.87,24.5,Orlando Magic,Charlotte Hornets,1.84,Orlando Magic,Home,Charlotte Hornets
+Franz Wagner,2024-03-19,player_points_rebounds_alternate,1.17,19.5,Orlando Magic,Charlotte Hornets,,Orlando Magic,Home,Charlotte Hornets
+Franz Wagner,2024-03-19,player_points_rebounds_assists,1.88,27.5,Orlando Magic,Charlotte Hornets,1.85,Orlando Magic,Home,Charlotte Hornets
+Franz Wagner,2024-03-19,player_points_rebounds_assists_alternate,1.05,19.5,Orlando Magic,Charlotte Hornets,,Orlando Magic,Home,Charlotte Hornets
+Franz Wagner,2024-03-19,player_rebounds,1.56,4.5,Orlando Magic,Charlotte Hornets,2.33,Orlando Magic,Home,Charlotte Hornets
+Franz Wagner,2024-03-19,player_rebounds_alternate,10.25,9.5,Orlando Magic,Charlotte Hornets,,Orlando Magic,Home,Charlotte Hornets
+Franz Wagner,2024-03-19,player_rebounds_assists,1.78,8.5,Orlando Magic,Charlotte Hornets,1.94,Orlando Magic,Home,Charlotte Hornets
+Franz Wagner,2024-03-19,player_rebounds_assists_alternate,2.01,9.5,Orlando Magic,Charlotte Hornets,,Orlando Magic,Home,Charlotte Hornets
+Franz Wagner,2024-03-19,player_steals,1.43,0.5,Orlando Magic,Charlotte Hornets,2.65,Orlando Magic,Home,Charlotte Hornets
+Franz Wagner,2024-03-19,player_steals_alternate,1.5,0.5,Orlando Magic,Charlotte Hornets,,Orlando Magic,Home,Charlotte Hornets
+Franz Wagner,2024-03-19,player_threes,2.43,1.5,Orlando Magic,Charlotte Hornets,1.51,Orlando Magic,Home,Charlotte Hornets
+Franz Wagner,2024-03-19,player_threes_alternate,2.3,1.5,Orlando Magic,Charlotte Hornets,,Orlando Magic,Home,Charlotte Hornets
+Franz Wagner,2024-03-19,player_turnovers,1.53,1.5,Orlando Magic,Charlotte Hornets,2.36,Orlando Magic,Home,Charlotte Hornets
+Fred VanVleet,2024-03-19,player_assists,1.83,8.5,Washington Wizards,Houston Rockets,1.91,Houston Rockets,Away,Washington Wizards
+Fred VanVleet,2024-03-19,player_assists_alternate,,6.5,Washington Wizards,Houston Rockets,3.7,Houston Rockets,Away,Washington Wizards
+Fred VanVleet,2024-03-19,player_assists_alternate,2.15,9.5,Washington Wizards,Houston Rockets,,Houston Rockets,Away,Washington Wizards
+Fred VanVleet,2024-03-19,player_blocks,2.1,0.5,Washington Wizards,Houston Rockets,1.69,Houston Rockets,Away,Washington Wizards
+Fred VanVleet,2024-03-19,player_blocks_alternate,1.91,0.5,Washington Wizards,Houston Rockets,,Houston Rockets,Away,Washington Wizards
+Fred VanVleet,2024-03-19,player_blocks_steals,2.2,2.5,Washington Wizards,Houston Rockets,1.62,Houston Rockets,Away,Washington Wizards
+Fred VanVleet,2024-03-19,player_points,1.8,19.5,Washington Wizards,Houston Rockets,1.91,Houston Rockets,Away,Washington Wizards
+Fred VanVleet,2024-03-19,player_points_alternate,1.43,17.5,Washington Wizards,Houston Rockets,,Houston Rockets,Away,Washington Wizards
+Fred VanVleet,2024-03-19,player_points_alternate,,18.5,Washington Wizards,Houston Rockets,2.15,Houston Rockets,Away,Washington Wizards
+Fred VanVleet,2024-03-19,player_points_assists,1.83,28.5,Washington Wizards,Houston Rockets,1.87,Houston Rockets,Away,Washington Wizards
+Fred VanVleet,2024-03-19,player_points_assists_alternate,1.03,19.5,Washington Wizards,Houston Rockets,,Houston Rockets,Away,Washington Wizards
+Fred VanVleet,2024-03-19,player_points_rebounds,1.91,24.5,Washington Wizards,Houston Rockets,1.83,Houston Rockets,Away,Washington Wizards
+Fred VanVleet,2024-03-19,player_points_rebounds_alternate,1.16,19.5,Washington Wizards,Houston Rockets,,Houston Rockets,Away,Washington Wizards
+Fred VanVleet,2024-03-19,player_points_rebounds_assists,1.91,33.5,Washington Wizards,Houston Rockets,1.83,Houston Rockets,Away,Washington Wizards
+Fred VanVleet,2024-03-19,player_points_rebounds_assists_alternate,4.51,43.5,Washington Wizards,Houston Rockets,,Houston Rockets,Away,Washington Wizards
+Fred VanVleet,2024-03-19,player_rebounds,1.91,4.5,Washington Wizards,Houston Rockets,1.83,Houston Rockets,Away,Washington Wizards
+Fred VanVleet,2024-03-19,player_rebounds_alternate,,2.5,Washington Wizards,Houston Rockets,4.5,Houston Rockets,Away,Washington Wizards
+Fred VanVleet,2024-03-19,player_rebounds_alternate,21.0,9.5,Washington Wizards,Houston Rockets,,Houston Rockets,Away,Washington Wizards
+Fred VanVleet,2024-03-19,player_rebounds_assists,1.95,13.5,Washington Wizards,Houston Rockets,1.77,Houston Rockets,Away,Washington Wizards
+Fred VanVleet,2024-03-19,player_rebounds_assists_alternate,1.51,12.5,Washington Wizards,Houston Rockets,,Houston Rockets,Away,Washington Wizards
+Fred VanVleet,2024-03-19,player_steals,1.8,1.5,Washington Wizards,Houston Rockets,1.95,Houston Rockets,Away,Washington Wizards
+Fred VanVleet,2024-03-19,player_steals_alternate,1.2,0.5,Washington Wizards,Houston Rockets,,Houston Rockets,Away,Washington Wizards
+Fred VanVleet,2024-03-19,player_threes,1.61,2.5,Washington Wizards,Houston Rockets,2.25,Houston Rockets,Away,Washington Wizards
+Fred VanVleet,2024-03-19,player_threes_alternate,1.18,1.5,Washington Wizards,Houston Rockets,,Houston Rockets,Away,Washington Wizards
+Fred VanVleet,2024-03-19,player_turnovers,2.45,2.5,Washington Wizards,Houston Rockets,1.5,Houston Rockets,Away,Washington Wizards
+Jalen Green,2024-03-19,player_assists,1.83,3.5,Washington Wizards,Houston Rockets,1.91,Houston Rockets,Away,Washington Wizards
+Jalen Green,2024-03-19,player_assists_alternate,1.07,1.5,Washington Wizards,Houston Rockets,5.75,Houston Rockets,Away,Washington Wizards
+Jalen Green,2024-03-19,player_blocks,2.4,0.5,Washington Wizards,Houston Rockets,1.53,Houston Rockets,Away,Washington Wizards
+Jalen Green,2024-03-19,player_blocks_alternate,2.0,0.5,Washington Wizards,Houston Rockets,,Houston Rockets,Away,Washington Wizards
+Jalen Green,2024-03-19,player_blocks_steals,2.25,1.5,Washington Wizards,Houston Rockets,1.61,Houston Rockets,Away,Washington Wizards
+Jalen Green,2024-03-19,player_points,1.71,25.5,Washington Wizards,Houston Rockets,2.05,Houston Rockets,Away,Washington Wizards
+Jalen Green,2024-03-19,player_points_alternate,,23.5,Washington Wizards,Houston Rockets,2.5,Houston Rockets,Away,Washington Wizards
+Jalen Green,2024-03-19,player_points_alternate,1.59,24.5,Washington Wizards,Houston Rockets,,Houston Rockets,Away,Washington Wizards
+Jalen Green,2024-03-19,player_points_assists,1.91,29.5,Washington Wizards,Houston Rockets,1.83,Houston Rockets,Away,Washington Wizards
+Jalen Green,2024-03-19,player_points_assists_alternate,1.03,19.5,Washington Wizards,Houston Rockets,,Houston Rockets,Away,Washington Wizards
+Jalen Green,2024-03-19,player_points_rebounds,1.83,32.5,Washington Wizards,Houston Rockets,1.91,Houston Rockets,Away,Washington Wizards
+Jalen Green,2024-03-19,player_points_rebounds_alternate,1.07,24.5,Washington Wizards,Houston Rockets,,Houston Rockets,Away,Washington Wizards
+Jalen Green,2024-03-19,player_points_rebounds_assists,1.91,36.5,Washington Wizards,Houston Rockets,1.83,Houston Rockets,Away,Washington Wizards
+Jalen Green,2024-03-19,player_points_rebounds_assists_alternate,8.19,52.5,Washington Wizards,Houston Rockets,,Houston Rockets,Away,Washington Wizards
+Jalen Green,2024-03-19,player_rebounds,1.87,6.5,Washington Wizards,Houston Rockets,1.83,Houston Rockets,Away,Washington Wizards
+Jalen Green,2024-03-19,player_rebounds_alternate,,5.5,Washington Wizards,Houston Rockets,2.55,Houston Rockets,Away,Washington Wizards
+Jalen Green,2024-03-19,player_rebounds_alternate,4.25,9.5,Washington Wizards,Houston Rockets,,Houston Rockets,Away,Washington Wizards
+Jalen Green,2024-03-19,player_rebounds_assists,1.95,10.5,Washington Wizards,Houston Rockets,1.8,Houston Rockets,Away,Washington Wizards
+Jalen Green,2024-03-19,player_rebounds_assists_alternate,1.77,10.5,Washington Wizards,Houston Rockets,,Houston Rockets,Away,Washington Wizards
+Jalen Green,2024-03-19,player_steals,1.57,0.5,Washington Wizards,Houston Rockets,2.35,Houston Rockets,Away,Washington Wizards
+Jalen Green,2024-03-19,player_steals_alternate,1.59,0.5,Washington Wizards,Houston Rockets,,Houston Rockets,Away,Washington Wizards
+Jalen Green,2024-03-19,player_threes,1.77,2.5,Washington Wizards,Houston Rockets,1.95,Houston Rockets,Away,Washington Wizards
+Jalen Green,2024-03-19,player_threes_alternate,1.27,1.5,Washington Wizards,Houston Rockets,,Houston Rockets,Away,Washington Wizards
+Jalen Green,2024-03-19,player_turnovers,1.83,2.5,Washington Wizards,Houston Rockets,1.91,Houston Rockets,Away,Washington Wizards
+Kyle Kuzma,2024-03-19,player_assists,2.05,4.5,Washington Wizards,Houston Rockets,1.71,Washington Wizards,Home,Houston Rockets
+Kyle Kuzma,2024-03-19,player_assists_alternate,1.15,2.5,Washington Wizards,Houston Rockets,4.1,Washington Wizards,Home,Houston Rockets
+Kyle Kuzma,2024-03-19,player_blocks,1.61,0.5,Washington Wizards,Houston Rockets,2.25,Washington Wizards,Home,Houston Rockets
+Kyle Kuzma,2024-03-19,player_blocks_alternate,1.4,0.5,Washington Wizards,Houston Rockets,,Washington Wizards,Home,Houston Rockets
+Kyle Kuzma,2024-03-19,player_blocks_steals,1.83,1.5,Washington Wizards,Houston Rockets,1.91,Washington Wizards,Home,Houston Rockets
+Kyle Kuzma,2024-03-19,player_points,1.95,22.5,Washington Wizards,Houston Rockets,1.77,Washington Wizards,Home,Houston Rockets
+Kyle Kuzma,2024-03-19,player_points_alternate,1.42,19.5,Washington Wizards,Houston Rockets,,Washington Wizards,Home,Houston Rockets
+Kyle Kuzma,2024-03-19,player_points_alternate,,20.5,Washington Wizards,Houston Rockets,2.15,Washington Wizards,Home,Houston Rockets
+Kyle Kuzma,2024-03-19,player_points_assists,1.91,26.5,Washington Wizards,Houston Rockets,1.83,Washington Wizards,Home,Houston Rockets
+Kyle Kuzma,2024-03-19,player_points_assists_alternate,1.09,19.5,Washington Wizards,Houston Rockets,,Washington Wizards,Home,Houston Rockets
+Kyle Kuzma,2024-03-19,player_points_rebounds,1.8,29.5,Washington Wizards,Houston Rockets,1.95,Washington Wizards,Home,Houston Rockets
+Kyle Kuzma,2024-03-19,player_points_rebounds_alternate,1.03,19.5,Washington Wizards,Houston Rockets,,Washington Wizards,Home,Houston Rockets
+Kyle Kuzma,2024-03-19,player_points_rebounds_assists,1.91,34.5,Washington Wizards,Houston Rockets,1.83,Washington Wizards,Home,Houston Rockets
+Kyle Kuzma,2024-03-19,player_points_rebounds_assists_alternate,4.38,42.5,Washington Wizards,Houston Rockets,,Washington Wizards,Home,Houston Rockets
+Kyle Kuzma,2024-03-19,player_rebounds,1.83,7.5,Washington Wizards,Houston Rockets,1.91,Washington Wizards,Home,Houston Rockets
+Kyle Kuzma,2024-03-19,player_rebounds_alternate,,5.5,Washington Wizards,Houston Rockets,3.5,Washington Wizards,Home,Houston Rockets
+Kyle Kuzma,2024-03-19,player_rebounds_alternate,3.1,9.5,Washington Wizards,Houston Rockets,,Washington Wizards,Home,Houston Rockets
+Kyle Kuzma,2024-03-19,player_rebounds_assists,1.69,11.5,Washington Wizards,Houston Rockets,2.05,Washington Wizards,Home,Houston Rockets
+Kyle Kuzma,2024-03-19,player_rebounds_assists_alternate,2.69,14.5,Washington Wizards,Houston Rockets,,Washington Wizards,Home,Houston Rockets
+Kyle Kuzma,2024-03-19,player_steals,1.69,0.5,Washington Wizards,Houston Rockets,2.1,Washington Wizards,Home,Houston Rockets
+Kyle Kuzma,2024-03-19,player_steals_alternate,1.69,0.5,Washington Wizards,Houston Rockets,,Washington Wizards,Home,Houston Rockets
+Kyle Kuzma,2024-03-19,player_threes,1.8,1.5,Washington Wizards,Houston Rockets,1.95,Washington Wizards,Home,Houston Rockets
+Kyle Kuzma,2024-03-19,player_threes_alternate,1.8,1.5,Washington Wizards,Houston Rockets,,Washington Wizards,Home,Houston Rockets
+Kyle Kuzma,2024-03-19,player_turnovers,1.65,2.5,Washington Wizards,Houston Rockets,2.15,Washington Wizards,Home,Houston Rockets
+Mikal Bridges,2024-03-19,player_assists,1.83,3.5,Brooklyn Nets,New Orleans Pelicans,1.91,Brooklyn Nets,Home,New Orleans Pelicans
+Mikal Bridges,2024-03-19,player_blocks,2.35,0.5,Brooklyn Nets,New Orleans Pelicans,1.54,Brooklyn Nets,Home,New Orleans Pelicans
+Mikal Bridges,2024-03-19,player_blocks_steals,2.05,1.5,Brooklyn Nets,New Orleans Pelicans,1.71,Brooklyn Nets,Home,New Orleans Pelicans
+Mikal Bridges,2024-03-19,player_points,1.95,18.5,Brooklyn Nets,New Orleans Pelicans,1.8,Brooklyn Nets,Home,New Orleans Pelicans
+Mikal Bridges,2024-03-19,player_points_alternate,1.71,16.5,Brooklyn Nets,New Orleans Pelicans,2.3,Brooklyn Nets,Home,New Orleans Pelicans
+Mikal Bridges,2024-03-19,player_points_assists,1.95,22.5,Brooklyn Nets,New Orleans Pelicans,1.77,Brooklyn Nets,Home,New Orleans Pelicans
+Mikal Bridges,2024-03-19,player_points_rebounds,1.87,22.5,Brooklyn Nets,New Orleans Pelicans,1.87,Brooklyn Nets,Home,New Orleans Pelicans
+Mikal Bridges,2024-03-19,player_points_rebounds_assists,1.87,26.5,Brooklyn Nets,New Orleans Pelicans,1.87,Brooklyn Nets,Home,New Orleans Pelicans
+Mikal Bridges,2024-03-19,player_rebounds,2.05,4.5,Brooklyn Nets,New Orleans Pelicans,1.71,Brooklyn Nets,Home,New Orleans Pelicans
+Mikal Bridges,2024-03-19,player_rebounds_alternate,,2.5,Brooklyn Nets,New Orleans Pelicans,4.6,Brooklyn Nets,Home,New Orleans Pelicans
+Mikal Bridges,2024-03-19,player_rebounds_alternate,26.0,9.5,Brooklyn Nets,New Orleans Pelicans,,Brooklyn Nets,Home,New Orleans Pelicans
+Mikal Bridges,2024-03-19,player_rebounds_assists,2.05,8.5,Brooklyn Nets,New Orleans Pelicans,1.69,Brooklyn Nets,Home,New Orleans Pelicans
+Mikal Bridges,2024-03-19,player_steals,1.48,0.5,Brooklyn Nets,New Orleans Pelicans,2.55,Brooklyn Nets,Home,New Orleans Pelicans
+Mikal Bridges,2024-03-19,player_threes,1.95,2.5,Brooklyn Nets,New Orleans Pelicans,1.8,Brooklyn Nets,Home,New Orleans Pelicans
+Mikal Bridges,2024-03-19,player_turnovers,1.65,1.5,Brooklyn Nets,New Orleans Pelicans,2.15,Brooklyn Nets,Home,New Orleans Pelicans
+Miles Bridges,2024-03-19,player_assists,1.49,2.5,Orlando Magic,Charlotte Hornets,2.5,Charlotte Hornets,Away,Orlando Magic
+Miles Bridges,2024-03-19,player_assists_alternate,1.13,1.5,Orlando Magic,Charlotte Hornets,,Charlotte Hornets,Away,Orlando Magic
+Miles Bridges,2024-03-19,player_blocks,2.84,0.5,Orlando Magic,Charlotte Hornets,1.38,Charlotte Hornets,Away,Orlando Magic
+Miles Bridges,2024-03-19,player_blocks_alternate,2.5,0.5,Orlando Magic,Charlotte Hornets,,Charlotte Hornets,Away,Orlando Magic
+Miles Bridges,2024-03-19,player_blocks_steals,2.04,1.5,Orlando Magic,Charlotte Hornets,1.7,Charlotte Hornets,Away,Orlando Magic
+Miles Bridges,2024-03-19,player_points,1.79,19.5,Orlando Magic,Charlotte Hornets,1.94,Charlotte Hornets,Away,Orlando Magic
+Miles Bridges,2024-03-19,player_points_alternate,1.38,18.5,Orlando Magic,Charlotte Hornets,,Charlotte Hornets,Away,Orlando Magic
+Miles Bridges,2024-03-19,player_points_assists,1.81,23.5,Orlando Magic,Charlotte Hornets,1.9,Charlotte Hornets,Away,Orlando Magic
+Miles Bridges,2024-03-19,player_points_assists_alternate,1.22,19.5,Orlando Magic,Charlotte Hornets,,Charlotte Hornets,Away,Orlando Magic
+Miles Bridges,2024-03-19,player_points_rebounds,1.83,27.5,Orlando Magic,Charlotte Hornets,1.88,Charlotte Hornets,Away,Orlando Magic
+Miles Bridges,2024-03-19,player_points_rebounds_alternate,1.05,19.5,Orlando Magic,Charlotte Hornets,,Charlotte Hornets,Away,Orlando Magic
+Miles Bridges,2024-03-19,player_points_rebounds_assists,1.72,29.5,Orlando Magic,Charlotte Hornets,2.04,Charlotte Hornets,Away,Orlando Magic
+Miles Bridges,2024-03-19,player_points_rebounds_assists_alternate,2.91,35.5,Orlando Magic,Charlotte Hornets,,Charlotte Hornets,Away,Orlando Magic
+Miles Bridges,2024-03-19,player_rebounds,2.16,7.5,Orlando Magic,Charlotte Hornets,1.65,Charlotte Hornets,Away,Orlando Magic
+Miles Bridges,2024-03-19,player_rebounds_alternate,3.4,9.5,Orlando Magic,Charlotte Hornets,,Charlotte Hornets,Away,Orlando Magic
+Miles Bridges,2024-03-19,player_rebounds_assists,1.8,10.5,Orlando Magic,Charlotte Hornets,1.92,Charlotte Hornets,Away,Orlando Magic
+Miles Bridges,2024-03-19,player_rebounds_assists_alternate,1.36,9.5,Orlando Magic,Charlotte Hornets,,Charlotte Hornets,Away,Orlando Magic
+Miles Bridges,2024-03-19,player_steals,2.75,1.5,Orlando Magic,Charlotte Hornets,1.42,Charlotte Hornets,Away,Orlando Magic
+Miles Bridges,2024-03-19,player_steals_alternate,1.4,0.5,Orlando Magic,Charlotte Hornets,,Charlotte Hornets,Away,Orlando Magic
+Miles Bridges,2024-03-19,player_threes,2.4,2.5,Orlando Magic,Charlotte Hornets,1.53,Charlotte Hornets,Away,Orlando Magic
+Miles Bridges,2024-03-19,player_threes_alternate,1.38,1.5,Orlando Magic,Charlotte Hornets,,Charlotte Hornets,Away,Orlando Magic
+Miles Bridges,2024-03-19,player_turnovers,2.12,2.5,Orlando Magic,Charlotte Hornets,1.65,Charlotte Hornets,Away,Orlando Magic
+Paolo Banchero,2024-03-19,player_assists,1.85,5.5,Orlando Magic,Charlotte Hornets,1.88,Orlando Magic,Home,Charlotte Hornets
+Paolo Banchero,2024-03-19,player_assists_alternate,11.0,9.5,Orlando Magic,Charlotte Hornets,,Orlando Magic,Home,Charlotte Hornets
+Paolo Banchero,2024-03-19,player_blocks,2.1,0.5,Orlando Magic,Charlotte Hornets,1.66,Orlando Magic,Home,Charlotte Hornets
+Paolo Banchero,2024-03-19,player_blocks_alternate,1.91,0.5,Orlando Magic,Charlotte Hornets,,Orlando Magic,Home,Charlotte Hornets
+Paolo Banchero,2024-03-19,player_blocks_steals,1.99,1.5,Orlando Magic,Charlotte Hornets,1.74,Orlando Magic,Home,Charlotte Hornets
+Paolo Banchero,2024-03-19,player_points,2.08,22.5,Orlando Magic,Charlotte Hornets,1.7,Orlando Magic,Home,Charlotte Hornets
+Paolo Banchero,2024-03-19,player_points_alternate,1.49,19.5,Orlando Magic,Charlotte Hornets,,Orlando Magic,Home,Charlotte Hornets
+Paolo Banchero,2024-03-19,player_points_assists,1.87,27.5,Orlando Magic,Charlotte Hornets,1.84,Orlando Magic,Home,Charlotte Hornets
+Paolo Banchero,2024-03-19,player_points_assists_alternate,1.04,19.5,Orlando Magic,Charlotte Hornets,,Orlando Magic,Home,Charlotte Hornets
+Paolo Banchero,2024-03-19,player_points_rebounds,1.78,28.5,Orlando Magic,Charlotte Hornets,1.94,Orlando Magic,Home,Charlotte Hornets
+Paolo Banchero,2024-03-19,player_points_rebounds_alternate,1.03,19.5,Orlando Magic,Charlotte Hornets,,Orlando Magic,Home,Charlotte Hornets
+Paolo Banchero,2024-03-19,player_points_rebounds_assists,2.1,35.5,Orlando Magic,Charlotte Hornets,1.67,Orlando Magic,Home,Charlotte Hornets
+Paolo Banchero,2024-03-19,player_points_rebounds_assists_alternate,2.58,38.5,Orlando Magic,Charlotte Hornets,,Orlando Magic,Home,Charlotte Hornets
+Paolo Banchero,2024-03-19,player_rebounds,2.3,7.5,Orlando Magic,Charlotte Hornets,1.57,Orlando Magic,Home,Charlotte Hornets
+Paolo Banchero,2024-03-19,player_rebounds_alternate,3.7,9.5,Orlando Magic,Charlotte Hornets,,Orlando Magic,Home,Charlotte Hornets
+Paolo Banchero,2024-03-19,player_rebounds_assists,1.73,12.5,Orlando Magic,Charlotte Hornets,2.0,Orlando Magic,Home,Charlotte Hornets
+Paolo Banchero,2024-03-19,player_rebounds_assists_alternate,1.08,9.5,Orlando Magic,Charlotte Hornets,,Orlando Magic,Home,Charlotte Hornets
+Paolo Banchero,2024-03-19,player_steals,1.5,0.5,Orlando Magic,Charlotte Hornets,2.5,Orlando Magic,Home,Charlotte Hornets
+Paolo Banchero,2024-03-19,player_steals_alternate,1.5,0.5,Orlando Magic,Charlotte Hornets,,Orlando Magic,Home,Charlotte Hornets
+Paolo Banchero,2024-03-19,player_threes,2.12,1.5,Orlando Magic,Charlotte Hornets,1.67,Orlando Magic,Home,Charlotte Hornets
+Paolo Banchero,2024-03-19,player_threes_alternate,2.0,1.5,Orlando Magic,Charlotte Hornets,,Orlando Magic,Home,Charlotte Hornets
+Paolo Banchero,2024-03-19,player_turnovers,1.6,2.5,Orlando Magic,Charlotte Hornets,2.2,Orlando Magic,Home,Charlotte Hornets
+Zion Williamson,2024-03-19,player_assists,1.62,4.5,Brooklyn Nets,New Orleans Pelicans,2.25,New Orleans Pelicans,Away,Brooklyn Nets
+Zion Williamson,2024-03-19,player_blocks,1.61,0.5,Brooklyn Nets,New Orleans Pelicans,2.25,New Orleans Pelicans,Away,Brooklyn Nets
+Zion Williamson,2024-03-19,player_blocks_steals,1.62,1.5,Brooklyn Nets,New Orleans Pelicans,2.2,New Orleans Pelicans,Away,Brooklyn Nets
+Zion Williamson,2024-03-19,player_points,1.91,24.5,Brooklyn Nets,New Orleans Pelicans,1.83,New Orleans Pelicans,Away,Brooklyn Nets
+Zion Williamson,2024-03-19,player_points_alternate,1.45,21.5,Brooklyn Nets,New Orleans Pelicans,,New Orleans Pelicans,Away,Brooklyn Nets
+Zion Williamson,2024-03-19,player_points_alternate,,22.5,Brooklyn Nets,New Orleans Pelicans,2.3,New Orleans Pelicans,Away,Brooklyn Nets
+Zion Williamson,2024-03-19,player_points_assists,1.83,29.5,Brooklyn Nets,New Orleans Pelicans,1.91,New Orleans Pelicans,Away,Brooklyn Nets
+Zion Williamson,2024-03-19,player_points_rebounds,1.87,31.5,Brooklyn Nets,New Orleans Pelicans,1.83,New Orleans Pelicans,Away,Brooklyn Nets
+Zion Williamson,2024-03-19,player_points_rebounds_assists,1.83,36.5,Brooklyn Nets,New Orleans Pelicans,1.91,New Orleans Pelicans,Away,Brooklyn Nets
+Zion Williamson,2024-03-19,player_rebounds,1.83,6.5,Brooklyn Nets,New Orleans Pelicans,1.91,New Orleans Pelicans,Away,Brooklyn Nets
+Zion Williamson,2024-03-19,player_rebounds_alternate,,5.5,Brooklyn Nets,New Orleans Pelicans,2.95,New Orleans Pelicans,Away,Brooklyn Nets
+Zion Williamson,2024-03-19,player_rebounds_alternate,4.0,9.5,Brooklyn Nets,New Orleans Pelicans,,New Orleans Pelicans,Away,Brooklyn Nets
+Zion Williamson,2024-03-19,player_rebounds_assists,2.05,12.5,Brooklyn Nets,New Orleans Pelicans,1.69,New Orleans Pelicans,Away,Brooklyn Nets
+Zion Williamson,2024-03-19,player_steals,1.53,0.5,Brooklyn Nets,New Orleans Pelicans,2.4,New Orleans Pelicans,Away,Brooklyn Nets
+Zion Williamson,2024-03-19,player_turnovers,1.87,2.5,Brooklyn Nets,New Orleans Pelicans,1.87,New Orleans Pelicans,Away,Brooklyn Nets
