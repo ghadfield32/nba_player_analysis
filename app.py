@@ -5,6 +5,13 @@ from datetime import datetime, timedelta
 from modular.player_game_logs import load_nba_player_game_logs, prepare_upcoming_games_data
 from modular.metrics_functions import prepare_mean_std_data, prepare_league_std_data, prepare_performance_against_all_teams
 from modular.betting_functions import calculate_probability, calculate_bet_outcome, generate_betting_options, evaluate_bets, evaluate_bets_n_games_debug
+import os
+
+#file paths
+prev_data_file_path = os.path.join('data', 'player_game_logs_winr.csv')
+upcoming_games_file_path = os.path.join('data', '23_24_season_games.csv')
+
+
 
 # Add a new section in your sidebar for navigation
 st.sidebar.header("Navigation")
@@ -22,7 +29,7 @@ min_avg_minutes =st.sidebar.slider('Minimum Average Minutes Played', min_value=1
 
 # Option to reload data
 if st.sidebar.button('Load/Refresh Data'):
-    load_nba_player_game_logs([selected_season], min_avg_minutes=min_avg_minutes, save_path='data/player_game_logs_winr.csv')
+    load_nba_player_game_logs([selected_season], min_avg_minutes=min_avg_minutes, save_path=prev_data_file_path)
     st.sidebar.success(f"Data for the {selected_season} season loaded successfully.")
 
 # Loading data with caching
@@ -34,7 +41,7 @@ def load_data():
     return data
 
 #pull in upcoming games to concatenate to data and input averages onto it
-upcoming_games = prepare_upcoming_games_data('data/23_24_season_games.csv', 'data/player_game_logs_winr.csv', expand_with_players=True)
+upcoming_games = prepare_upcoming_games_data(upcoming_games_file_path, prev_data_file_path, expand_with_players=True)
 
 # Load the existing games data
 previous_games = load_data()
@@ -98,10 +105,10 @@ if page == "Player Analysis":
 
 
     if not player_data.empty:
-        game_location = 'Home' if player_data['home_away'].iloc[0] == 'Home' else 'Away'
+        game_location = 'Home' if player_data['HOME_AWAY'].iloc[0] == 'Home' else 'Away'
         game_opposing_team = player_data['OPPONENT_NAME'].iloc[0]
         st.write(f"Data for {selected_player} ({game_location} game) against {game_opposing_team} on {selected_date}:")
-        #st.dataframe(player_data[['GAME_DATE', 'TEAM_NAME', 'home_away', 'PLAYER_NAME', 'TEAM_WIN_RATE', 'OPPONENT_WIN_RATE', 'PTS', 'FG3M', 'REB', 'AST', 'STL', 'BLK', 'TOV', 'MIN']])
+        #st.dataframe(player_data[['GAME_DATE', 'TEAM_NAME', 'HOME_AWAY', 'PLAYER_NAME', 'TEAM_WIN_RATE', 'OPPONENT_WIN_RATE', 'PTS', 'FG3M', 'REB', 'AST', 'STL', 'BLK', 'TOV', 'MIN']])
     else:
         st.write(f"No data available for {selected_player} on {selected_date}.")
 
@@ -133,10 +140,10 @@ if page == "Player Analysis":
 
     # Filter for selected player and league standard
     combined_data_filtered = combined_data[combined_data['PLAYER_NAME'].isin([selected_player, 'League'])]
-    #print(combined_data_filtered[['PLAYER_NAME', 'PTS', 'TYPE', 'home_away', 'TEAM_NAME']])
+    #print(combined_data_filtered[['PLAYER_NAME', 'PTS', 'TYPE', 'HOME_AWAY', 'TEAM_NAME']])
 
     st.write(f"Total games played by {selected_player} in the dataset: {total_games_played}")
-    st.dataframe(combined_data_filtered[['TEAM_NAME', 'home_away', 'PLAYER_NAME', 'TYPE', 'TEAM_WIN_RATE', 'OPPONENT_WIN_RATE', 'PTS', 'FG3M', 'REB', 'AST', 'STL', 'BLK', 'TOV', 'MIN']])
+    st.dataframe(combined_data_filtered[['TEAM_NAME', 'HOME_AWAY', 'PLAYER_NAME', 'TYPE', 'TEAM_WIN_RATE', 'OPPONENT_WIN_RATE', 'PTS', 'FG3M', 'REB', 'AST', 'STL', 'BLK', 'TOV', 'MIN']])
 
     # Move Statistic Selection to Main Body
     stats_options = ['PTS', 'REB', 'AST', 'STL', 'BLK']  # Extend with more stats as needed
@@ -233,7 +240,7 @@ if page == "Player Analysis":
         st.write(f"Weighted Probability to Profit: {probability_weighted_to_profit:.2f}")
 
         st.write(f"Total games played by {selected_player} in the dataset: {total_games_played}")
-        st.dataframe(combined_data_filtered[['TEAM_NAME', 'home_away', 'PLAYER_NAME', 'TYPE', 'TEAM_WIN_RATE', 'OPPONENT_WIN_RATE', 'MIN', selected_stat_for_bet]])
+        st.dataframe(combined_data_filtered[['TEAM_NAME', 'HOME_AWAY', 'PLAYER_NAME', 'TYPE', 'TEAM_WIN_RATE', 'OPPONENT_WIN_RATE', 'MIN', selected_stat_for_bet]])
 
         #print("Preview of player_data:")
         #print(player_data.head())
@@ -326,77 +333,44 @@ if page == "Player Analysis":
     # New section for Betting Details
 # ...
 
-# elif page == "Forecasting Player Statistics":
-#     st.header("Statistic Details")
-#     st.title("NBA Players Forecasted Statistics")
+elif page == "Forecasting Player Statistics":
+    st.header("Statistic Details")
+    st.title("NBA Players Forecasted Statistics")
 
-#     # Sidebar selections
-#     unique_dates = data['GAME_DATE'].dt.strftime('%Y-%m-%d').unique()
-#     selected_date = st.sidebar.selectbox('Select a Date', unique_dates)
-#     #select date and filter for the players and teams
-#     data = data[data['GAME_DATE'] == pd.to_datetime(selected_date)]
-#     selected_players = st.sidebar.multiselect("Select Players", options=data['PLAYER_NAME'].unique())
-#     selected_teams = st.sidebar.multiselect("Select Teams", options=data['TEAM_NAME'].unique())  # Assuming this is used somewhere in your app
-#     game_location = st.sidebar.selectbox('Select Game Location', ['All', 'Home', 'Away'])
+    # Sidebar selections
+    unique_dates = data['GAME_DATE'].dt.strftime('%Y-%m-%d').unique()
+    selected_date = st.sidebar.selectbox('Select a Date', unique_dates)
+    #select date and filter for the players and teams
+    data = data[data['GAME_DATE'] == pd.to_datetime(selected_date)]
+    selected_players = st.sidebar.multiselect("Select Players", options=data['PLAYER_NAME'].unique())
+    selected_teams = st.sidebar.multiselect("Select Teams", options=data['TEAM_NAME'].unique())  # Assuming this is used somewhere in your app
+    game_location = st.sidebar.selectbox('Select Game Location', ['All', 'Home', 'Away'])
 
-#     # Parameters for betting options
-#     n_games = st.sidebar.slider('Number of Games', min_value=1, max_value=60, value=10)
-#     league_std_rate = st.sidebar.slider('League Standard Deviation Above Rate', min_value=0.0, max_value=1.0, value=0.9, step=0.01)
-#     probability_high = st.sidebar.slider('High Probability Threshold', min_value=0.0, max_value=1.0, value=0.9, step=0.01)
-#     probability_low = st.sidebar.slider('Low Probability Threshold', min_value=0.0, max_value=1.0, value=0.1, step=0.01)
+    # Parameters for betting options
+    n_games = st.sidebar.slider('Number of Games', min_value=1, max_value=60, value=10)
+    league_std_rate = st.sidebar.slider('League Standard Deviation Above Rate', min_value=0.0, max_value=1.0, value=0.9, step=0.01)
+    probability_high = st.sidebar.slider('High Probability Threshold', min_value=0.0, max_value=1.0, value=0.9, step=0.01)
+    probability_low = st.sidebar.slider('Low Probability Threshold', min_value=0.0, max_value=1.0, value=0.1, step=0.01)
 
-#     # Filter data for the selected date
-#     betting_today_data = data[data['GAME_DATE'] == pd.to_datetime(selected_date)]
-#     league_std_data = prepare_league_std_data(betting_today_data, n_games=n_games, game_location=game_location)
+    # Filter data for the selected date
+    betting_today_data = data[data['GAME_DATE'] == pd.to_datetime(selected_date)]
+    league_std_data = prepare_league_std_data(betting_today_data, n_games=n_games, game_location=game_location)
 
-#     if selected_players:
-#         evaluated_bets_list = []
-#         for player in selected_players:
-#             player_data = betting_today_data[betting_today_data['PLAYER_NAME'] == player]
-#             evaluated_bets_df = evaluate_bets_n_games_debug(player_data, player_data, n_games)  # Adjust this call as needed
-#             evaluated_bets_list.append(evaluated_bets_df)
+    if selected_players:
+        evaluated_bets_list = []
+        for player in selected_players:
+            player_data = betting_today_data[betting_today_data['PLAYER_NAME'] == player]
+            evaluated_bets_df = evaluate_bets_n_games_debug(player_data, player_data, n_games)  # Adjust this call as needed
+            evaluated_bets_list.append(evaluated_bets_df)
 
-#         combined_evaluated_bets_df = pd.concat(evaluated_bets_list, ignore_index=True) if evaluated_bets_list else pd.DataFrame()
+        combined_evaluated_bets_df = pd.concat(evaluated_bets_list, ignore_index=True) if evaluated_bets_list else pd.DataFrame()
         
-#         if not combined_evaluated_bets_df.empty:
-#             st.dataframe(combined_evaluated_bets_df[['PLAYER_NAME', 'GAME_DATE', 'Stat', 'Threshold', 'Actual Value', 'Bet Correct']])
-#             total_bets = len(combined_evaluated_bets_df)
-#             correct_bets = combined_evaluated_bets_df['Bet Correct'].sum()
-#             correct_percentage = correct_bets / total_bets * 100 if total_bets > 0 else 0
-#             st.write(f"Total Bets: {total_bets}, Correct Bets: {correct_bets}, Correct Percentage: {correct_percentage:.2f}%")
-#         else:
-#             st.write("No betting options generated for the selected criteria.")
+        if not combined_evaluated_bets_df.empty:
+            st.dataframe(combined_evaluated_bets_df[['PLAYER_NAME', 'GAME_DATE', 'Stat', 'Threshold', 'Actual Value', 'Bet Correct']])
+            total_bets = len(combined_evaluated_bets_df)
+            correct_bets = combined_evaluated_bets_df['Bet Correct'].sum()
+            correct_percentage = correct_bets / total_bets * 100 if total_bets > 0 else 0
+            st.write(f"Total Bets: {total_bets}, Correct Bets: {correct_bets}, Correct Percentage: {correct_percentage:.2f}%")
+        else:
+            st.write("No betting options generated for the selected criteria.")
 
-
-
-
-
-
-#Parlay add on
-
-# This is a simplified example. In your actual app, you'll collect bet details through the Streamlit UI.
-# parlay_bets = []
-# for bet in user_selected_bets:  # Assume this is a list of bets selected by the user
-#     player_data = load_player_data(bet['player_name'])  # You'll need to implement this based on your app's data structure
-#     probability, _, _, _, _, _, _, _ = calculate_probability(
-#         player_data, bet['stat'], bet['projection'], league_std_data, n_games=10, league_std_rate=0.9, opposing_team=bet.get('opposing_team')
-#     )
-#     parlay_bets.append({
-#         'odds': bet['odds'],
-#         'probability': probability
-#     })
-
-# # Calculate parlay odds and combined probability
-# parlay_odds, parlay_probability = calculate_parlay_odds(parlay_bets)
-
-# # Calculate potential profit/loss (this part needs to be implemented based on how you handle odds and betting amounts)
-# # Example: expected_profit, expected_loss, _ = calculate_bet_outcome(total_bet_amount, parlay_odds, parlay_probability)
-
-# # Display parlay bet details
-# st.write(f"Parlay Odds: {parlay_odds}, Parlay Probability: {parlay_probability*100:.2f}%")
-# # st.write(f"Expected Profit: ${expected_profit:.2f}, Expected Loss: -${expected_loss:.2f}")
-
-
-# Option to show full dataset
-#if st.checkbox('Show Full Dataset'):
-#    st.dataframe(data)
