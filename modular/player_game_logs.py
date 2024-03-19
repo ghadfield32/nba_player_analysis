@@ -92,8 +92,8 @@ def load_nba_player_game_logs(seasons, min_avg_minutes=30.0, save_path='data/pla
         new_players_data['TEAM_WIN_RATE'] = new_players_data.apply(lambda row: get_win_rate(row, 'TEAM_NAME', all_games), axis=1)
         new_players_data['OPPONENT_WIN_RATE'] = new_players_data.apply(lambda row: get_win_rate(row, 'OPPONENT_NAME', all_games), axis=1)
 
-        new_players_data['home_away'] = new_players_data['MATCHUP'].str.split(' ').str[1]
-        new_players_data['home_away'] = new_players_data['home_away'].apply(lambda x: 'Away' if '@' in x else 'Home')
+        new_players_data['HOME_AWAY'] = new_players_data['MATCHUP'].str.split(' ').str[1]
+        new_players_data['HOME_AWAY'] = new_players_data['HOME_AWAY'].apply(lambda x: 'Away' if '@' in x else 'Home')
         new_players_data.reset_index(drop=True)
     if not new_players_data.empty:
         new_players_data.to_csv(save_path, index=False)
@@ -118,19 +118,19 @@ def prepare_upcoming_games_data(season_games_csv, player_game_logs_csv, expand_w
     
     # Process home and away data
     home_data = data[['DATE', 'Start (ET)', 'Home/Neutral']].copy()
-    home_data['Home_Away'] = 'Home'
+    home_data['HOME_AWAY'] = 'Home'
     home_data['MATCHUP'] = home_data['Home/Neutral'] + ' vs. ' + data['Visitor/Neutral']
     home_data.rename(columns={'Home/Neutral': 'Team'}, inplace=True)
     home_data['WL_encoded'] = np.nan
     
     away_data = data[['DATE', 'Start (ET)', 'Visitor/Neutral']].copy()
-    away_data['Home_Away'] = 'Away'
+    away_data['HOME_AWAY'] = 'Away'
     away_data['MATCHUP'] = away_data['Visitor/Neutral'] + ' @ ' + home_data['Team']  # Adjusted to use '@' for away games
     away_data.rename(columns={'Visitor/Neutral': 'Team'}, inplace=True)
     away_data['WL_encoded'] = np.nan
     
     final_data = pd.concat([home_data, away_data], ignore_index=True)
-    final_data.sort_values(by=['DATE', 'Start (ET)', 'Home_Away'], inplace=True)
+    final_data.sort_values(by=['DATE', 'Start (ET)', 'HOME_AWAY'], inplace=True)
     final_data.reset_index(drop=True, inplace=True)
     
     # Convert 'DATE' column to datetime format
@@ -160,17 +160,17 @@ def prepare_upcoming_games_data(season_games_csv, player_game_logs_csv, expand_w
     upcoming_games['GAME_DATE'] = upcoming_games['DATE'].dt.strftime('%Y-%m-%d')
     
     # Correct the column name for consistency
-    upcoming_games.rename(columns={'Home_Away': 'home_away'}, inplace=True)
+    upcoming_games.rename(columns={'HOME_AWAY': 'HOME_AWAY'}, inplace=True)
     
     # Drop unnecessary columns and adjust to match the target dataset structure
-    upcoming_games = upcoming_games[['GAME_DATE', 'MATCHUP', 'home_away', 'TEAM_ID', 'TEAM_NAME']]
+    upcoming_games = upcoming_games[['GAME_DATE', 'MATCHUP', 'HOME_AWAY', 'TEAM_ID', 'TEAM_NAME']]
     
     # Create OPPOSING_TEAM column
     upcoming_games['OPPONENT_NAME'] = np.nan  # Placeholder for opposing team names
     
     # Populate TEAM_NAME and OPPOSING_TEAM with correct names
     for index, row in upcoming_games.iterrows():
-        if row['home_away'] == 'Home':
+        if row['HOME_AWAY'] == 'Home':
             # If it's a home game, the home team is TEAM_NAME and the visitor team is OPPOSING_TEAM
             home_team_abbr = row['MATCHUP'].split(' vs. ')[0]
             away_team_abbr = row['MATCHUP'].split(' vs. ')[1]
@@ -182,8 +182,8 @@ def prepare_upcoming_games_data(season_games_csv, player_game_logs_csv, expand_w
         home_team_full_name = teams_df[teams_df['TEAM_ABBREVIATION'] == home_team_abbr]['TEAM_NAME'].values[0]
         away_team_full_name = teams_df[teams_df['TEAM_ABBREVIATION'] == away_team_abbr]['TEAM_NAME'].values[0]
 
-        upcoming_games.at[index, 'TEAM_NAME'] = home_team_full_name if row['home_away'] == 'Home' else away_team_full_name
-        upcoming_games.at[index, 'OPPONENT_NAME'] = away_team_full_name if row['home_away'] == 'Home' else home_team_full_name
+        upcoming_games.at[index, 'TEAM_NAME'] = home_team_full_name if row['HOME_AWAY'] == 'Home' else away_team_full_name
+        upcoming_games.at[index, 'OPPONENT_NAME'] = away_team_full_name if row['HOME_AWAY'] == 'Home' else home_team_full_name
 
 
     # Load player game logs to use for fetching rosters
@@ -195,7 +195,7 @@ def prepare_upcoming_games_data(season_games_csv, player_game_logs_csv, expand_w
         expanded_games_with_players = pd.DataFrame()
 
         # Assuming player_game_logs_csv is correctly loaded into player_game_logs DataFrame
-        player_game_logs = pd.read_csv('data\player_game_logs_winr.csv')
+        player_game_logs = pd.read_csv(os.path.join('data', 'player_game_logs_winr.csv'))
 
         expanded_rows = []
 
@@ -214,8 +214,8 @@ def prepare_upcoming_games_data(season_games_csv, player_game_logs_csv, expand_w
         #drop duplicate players and game_dates
         expanded_games_with_players = expanded_games_with_players.drop_duplicates(subset=['GAME_DATE', 'PLAYER_NAME'], keep='first')
 
-        # only include these columns: ['GAME_DATE', 'MATCHUP', 'home_away', 'TEAM_NAME','OPPOSING_TEAM', 'Player_ID', 'PLAYER_NAME']
-        expanded_games_with_players = expanded_games_with_players[['GAME_DATE', 'MATCHUP', 'home_away', 'TEAM_NAME', 'OPPONENT_NAME', 'Player_ID', 'PLAYER_NAME']]
+        # only include these columns: ['GAME_DATE', 'MATCHUP', 'HOME_AWAY', 'TEAM_NAME','OPPOSING_TEAM', 'Player_ID', 'PLAYER_NAME']
+        expanded_games_with_players = expanded_games_with_players[['GAME_DATE', 'MATCHUP', 'HOME_AWAY', 'TEAM_NAME', 'OPPONENT_NAME', 'Player_ID', 'PLAYER_NAME']]
         
         # Return the expanded DataFrame
         return expanded_games_with_players
@@ -234,38 +234,5 @@ def prepare_upcoming_games_data(season_games_csv, player_game_logs_csv, expand_w
 #Final data prepare
 import pandas as pd
 
-def process_final_data(player_game_logs_file, upcoming_games_file):
-    # Load previous games data
-    try:
-        previous_games = load_nba_player_game_logs(player_game_logs_file)
-    except Exception as e:
-        print(f"Error loading previous games data: {e}")
-        return pd.DataFrame()
 
-    # Pull in upcoming games to concatenate with previous games
-    try:
-        upcoming_games = prepare_upcoming_games_data(upcoming_games_file, player_game_logs_file, expand_with_players=True)
-    except Exception as e:
-        print(f"Error preparing upcoming games data: {e}")
-        return pd.DataFrame()
-
-    # Filter out upcoming games already in previous games
-    unique_upcoming_games = upcoming_games[~upcoming_games['GAME_DATE'].isin(previous_games['GAME_DATE'])]
-    unique_upcoming_games = unique_upcoming_games[['GAME_DATE', 'MATCHUP', 'home_away', 'TEAM_NAME', 'OPPONENT_NAME', 'Player_ID', 'PLAYER_NAME']]
-
-    # Concatenate unique upcoming games to previous games dataset
-    data = pd.concat([previous_games, unique_upcoming_games], ignore_index=True)
-    data.sort_values(by='GAME_DATE', inplace=True)
-    data.reset_index(drop=True, inplace=True)
-
-    # Print min and max GAME_DATE
-    print(data['GAME_DATE'].min())
-    print(data['GAME_DATE'].max())
-
-    # Return the processed data
-    return data
-
-# Example usage:
-# processed_data = process_final_data('data/player_game_logs_winr.csv', 'data/23_24_season_games.csv')
-# print(processed_data.head())
 
