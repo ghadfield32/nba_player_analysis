@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import os
 
 def calculate_running_stats(group, stats):
     """
@@ -22,7 +23,7 @@ def prepare_mean_std_data(df, n_games=10, current_date=None, current_season=None
     if current_season:
         df = df[df['SEASON'] == current_season]
     if game_location in ['Home', 'Away']:
-        df = df[df['home_away'] == game_location]
+        df = df[df['HOME_AWAY'] == game_location]
 
     grouped = df.groupby(['PLAYER_NAME', 'TEAM_NAME'])
     result_list = []
@@ -35,11 +36,11 @@ def prepare_mean_std_data(df, n_games=10, current_date=None, current_season=None
         std_values['TYPE'] = 'std_'+str(n_games)+'_games'
         mean_values['PLAYER_NAME'] = player_name
         mean_values['TEAM_NAME'] = team_name
-        mean_values['home_away'] = game_location
+        mean_values['HOME_AWAY'] = game_location
         
         std_values['PLAYER_NAME'] = player_name
         std_values['TEAM_NAME'] = team_name
-        std_values['home_away'] = game_location
+        std_values['HOME_AWAY'] = game_location
 
         result_list.append(mean_values)
         result_list.append(std_values)
@@ -68,7 +69,7 @@ def calculate_league_stats(df, stats, n_games=10, current_date=None, current_sea
     if current_season:
         df = df[df['SEASON'] == current_season]
     if game_location in ['Home', 'Away']:
-        df = df[df['home_away'] == game_location]
+        df = df[df['HOME_AWAY'] == game_location]
 
     std_values = df[stats].std(ddof=0)  # Using population standard deviation
 
@@ -77,7 +78,7 @@ def calculate_league_stats(df, stats, n_games=10, current_date=None, current_sea
     std_values_df['TYPE'] = 'league_std_' + str(n_games) + '_games'
     std_values_df['PLAYER_NAME'] = 'League'
     std_values_df['TEAM_NAME'] = 'All'
-    std_values_df['home_away'] = game_location
+    std_values_df['HOME_AWAY'] = game_location
 
     return std_values_df
 

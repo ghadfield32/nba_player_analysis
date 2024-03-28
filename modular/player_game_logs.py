@@ -4,6 +4,7 @@ from nba_api.stats.endpoints import commonallplayers, playergamelog, leaguedashp
 from nba_api.stats.static import teams
 import time
 import numpy as np
+import os
 
 
 def get_current_nba_season_year():
@@ -41,6 +42,7 @@ def get_win_rate(row, team_type, all_games):
         return 0.0
 
 
+
 def load_nba_player_game_logs(seasons, min_avg_minutes=30.0, save_path='data/player_game_logs.csv'):
     if not isinstance(seasons, list):
         seasons = [seasons]
@@ -51,20 +53,37 @@ def load_nba_player_game_logs(seasons, min_avg_minutes=30.0, save_path='data/pla
         print(f"Processing season {season}...")
         try:
             all_players = commonallplayers.CommonAllPlayers(is_only_current_season=0).get_data_frames()[0]
+            if all_players.empty:
+                print(f"No players found for season {season}.")
+                continue
             player_stats = leaguedashplayerstats.LeagueDashPlayerStats(season=season).get_data_frames()[0]
+            if player_stats.empty:
+                print(f"No player stats available for season {season}.")
+                continue
         except Exception as e:
             print(f"Error fetching player stats for season {season}: {e}")
             continue
 
-        # Filter for players who meet the minimum average minutes threshold
         player_stats['AVG_MIN'] = player_stats['MIN'] / player_stats['GP']
         eligible_players = player_stats[player_stats['AVG_MIN'] >= min_avg_minutes]
+        if eligible_players.empty:
+            print(f"No players meet the minimum average minutes threshold for season {season}.")
+            continue
+
         teams_list = teams.get_teams()
+        if not teams_list:
+            print("Failed to load NBA teams list.")
+            continue
+
         team_abbrev_to_full_name = {team['abbreviation']: team['full_name'] for team in teams_list}
 
-        all_games = calculate_cumulative_win_rates(season)
-        if all_games.empty:
-            print("Skipping win rate calculation due to an error.")
+        try:
+            all_games = calculate_cumulative_win_rates(season)
+            if all_games.empty:
+                print("Skipping win rate calculation due to missing games data.")
+                continue
+        except Exception as e:
+            print(f"Error calculating win rates for season {season}: {e}")
             continue
 
         for index, player in eligible_players.iterrows():
@@ -73,33 +92,36 @@ def load_nba_player_game_logs(seasons, min_avg_minutes=30.0, save_path='data/pla
                 player_name = player['PLAYER_NAME']
                 player_log = playergamelog.PlayerGameLog(player_id=player_id, season=season)
                 player_data = player_log.get_data_frames()[0]
+                #print(f"Processing player {player_name} in season {season}...")
                 if player_data.empty:
+                    print(f"No game logs found for player {player_name} in season {season}.")
                     continue
+
                 player_data['PLAYER_NAME'] = player_name
                 player_data['TEAM_ABBREVIATION'] = player_data['MATCHUP'].str[:3]
                 player_data['OPPONENT_ABBREVIATION'] = player_data['MATCHUP'].apply(lambda x: x.split(' ')[2] if 'vs.' in x else x.split(' ')[-1])
                 player_data['TEAM_NAME'] = player_data['TEAM_ABBREVIATION'].map(team_abbrev_to_full_name)
                 player_data['OPPONENT_NAME'] = player_data['OPPONENT_ABBREVIATION'].map(team_abbrev_to_full_name)
-                player_data = player_data[player_data['TEAM_ABBREVIATION'].isin(team_abbrev_to_full_name.keys())]
+                
                 new_players_data = pd.concat([new_players_data, player_data], ignore_index=True)
-            except Exception as e:
-                print(f"Error processing player {player_name}: {e}")
-                continue
-            time.sleep(0.6)  # To respect rate limits
 
-        # Calculate team and opponent win rates
+            except Exception as e:
+                print(f"Error processing player {player_name} in season {season}: {e}")
+                continue
+            time.sleep(0.6)
+    #print(new_players_data.head())
+    if not new_players_data.empty:
         new_players_data['GAME_DATE'] = pd.to_datetime(new_players_data['GAME_DATE'])
         new_players_data['TEAM_WIN_RATE'] = new_players_data.apply(lambda row: get_win_rate(row, 'TEAM_NAME', all_games), axis=1)
         new_players_data['OPPONENT_WIN_RATE'] = new_players_data.apply(lambda row: get_win_rate(row, 'OPPONENT_NAME', all_games), axis=1)
-
-        new_players_data['HOME_AWAY'] = new_players_data['MATCHUP'].str.split(' ').str[1]
-        new_players_data['HOME_AWAY'] = new_players_data['HOME_AWAY'].apply(lambda x: 'Away' if '@' in x else 'Home')
-        new_players_data.reset_index(drop=True)
-    if not new_players_data.empty:
+        new_players_data['HOME_AWAY'] = new_players_data['MATCHUP'].str.split(' ').str[1].apply(lambda x: 'Away' if '@' in x else 'Home')
+        new_players_data.reset_index(drop=True, inplace=True)
         new_players_data.to_csv(save_path, index=False)
         print(f"Player game logs saved to {save_path}")
+        return new_players_data
     else:
-        print("No player game logs to save.")
+        print("No player game logs to save after processing all selected seasons.")
+        return pd.DataFrame()  # Ensure to return an empty DataFrame if no data
 
 
 
